@@ -1,0 +1,234 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/footer.astro";
+import "../css/animation.css";
+import "../css/style.css";
+---
+
+<Layout title="ASTRO SIMPLE BLOG">
+	<Header />
+	<main>
+		<div class="contenedor-contenido">
+			<!-- one post for the blog -->
+			<article class="post" id="inicio">
+				<!-- subtitle for the blog -->
+				<div class="subtitulo">
+					<h2>Inicio del Blog</h2>
+				</div>
+				<!-- URL the ASTRO for the blog -->
+				<p>
+					Bienvenido al <strong>Blog</strong> de ejemplo hecho con el <em
+						>Framework</em
+					>
+					<a
+						href="https://astro.build/"
+						target="_blank"
+						rel="noopener noreferrer"><strong>ASTRO</strong></a
+					>
+				</p>
+			</article>
+			<!-- second post for the blog -->
+			<article class="post-que-es-astro">
+				<div class="subtitulo-post2">
+					<h2>¿Que es ASTRO?</h2>
+				</div>
+				<p>
+					Astro es un <strong>framework de JavaScript</strong>
+					que permite construir sitios web rápidos y optimizados. Fue diseñado
+					con el propósito de permitir a los desarrolladores crear páginas
+					estáticas y dinámicas sin tener que preocuparse tanto por el
+					rendimiento, ya que optimiza los recursos generados y reduce
+					el tamaño del código que se entrega al cliente.
+				</p>
+				<section class="carateristica-post2">
+					<div class="subtitulo-caracteristica" id="Características">
+						<h2>Características principales de Astro</h2>
+					</div>
+					<section class="contenido-caracteristica">
+						<div class="caracteristica-lista">
+							<ol>
+								<!-- section one for the blog -->
+								<section
+									class="Renderizado _estatico_por_defecto"
+								>
+									<li>Renderizado estático por defecto:</li>
+									<p>
+										Astro genera principalmente <strong
+											>páginas estáticas</strong
+										> que se pueden servir de manera eficiente
+										y rápida. Esto ayuda a mejorar el rendimiento
+										de los sitios web, ya que las páginas se
+										generan en el momento de la construcción
+										y no en tiempo de ejecución.
+									</p>
+								</section>
+								<!-- second section for the blog -->
+								<section class="Componentes_de_UI">
+									<li>
+										Componentes de UI que pueden ser
+										utilizados con cualquier framework:
+									</li>
+									<ul style="padding: 9px;">
+										<li
+											style="margin-top: 2%; margin-bottom: 2%;"
+										>
+											Una de las características
+											distintivas de Astro es que permite
+											usar <strong>componentes</strong> de
+											distintos frameworks de JavaScript (como
+											React, Vue, Svelte, Preact, etc.) dentro
+											del mismo proyecto, sin que estos frameworks
+											tengan que estar siempre activos en el
+											navegador.
+										</li>
+										<li
+											style="margin-top: 2%; margin-bottom: 2%;"
+										>
+											Esto significa que puedes mezclar y
+											combinar componentes de diferentes
+											tecnologías dentro de un solo sitio
+											sin sacrificar el rendimiento.
+										</li>
+									</ul>
+								</section>
+								<!-- third section for the blog -->
+								<section class="Optimizacion_automatica">
+									<li>Optimización automática:</li>
+									<p>
+										Astro realiza automáticamente la
+										optimización de los recursos que entrega
+										a los usuarios. Esto incluye cosas como
+										la eliminación de JavaScript
+										innecesario, la carga de imágenes
+										optimizadas, el manejo de la carga
+										diferida (lazy loading), entre otras
+										cosas.
+									</p>
+								</section>
+								<!-- fourth section for the blog -->
+								<section class="Enfoque_en_la_velocidad">
+									<li>Enfoque en la velocidad:</li>
+									<p>
+										Gracias a su renderizado estático y su
+										optimización, los sitios creados con
+										Astro son <strong
+											>extremadamente rápidos</strong
+										>, lo que mejora tanto la experiencia
+										del usuario como el <strong
+											>SEO (optimización en motores de
+											búsqueda).</strong
+										>
+									</p>
+								</section>
+								<!-- fifth section for the blog -->
+								<section class="Cero_JavaScript_por_defecto">
+									<li>Cero JavaScript por defecto:</li>
+									<p>
+										Astro permite que el sitio esté <strong
+											>libre de JavaScript</strong
+										> de manera predeterminada. Solo se incluirá
+										el código JavaScript si es estrictamente
+										necesario, lo que resulta en un sitio web
+										más rápido y ligero
+									</p>
+								</section>
+								<!-- sixth section for the blog -->
+								<section class="Soporte_para_Partial_Hydration">
+									<li>
+										Soporte para "Partial
+										Hydration"(hidratación parcial):
+									</li>
+									<p>
+										En lugar de cargar todo el JavaScript de
+										una página, Astro permite hidratar solo
+										partes específicas de la interfaz de
+										usuario cuando es necesario. Esto
+										significa que puedes tener
+										interactividad en ciertas partes del
+										sitio sin sacrificar el rendimiento
+										general de la página.
+									</p>
+								</section>
+								<!-- seventh section for the blog -->
+								<section class="Sistema de plantillas">
+									<li>
+										Sistema de plantillas (Markdown, JSX,
+										etc.):
+									</li>
+									<p>
+										Astro ofrece un sistema de plantillas
+										flexible. Puedes escribir en <strong
+											>Markdown</strong
+										>, usar JSX o incluso plantillas basadas
+										en componentes para estructurar tu
+										contenido. Esto facilita el desarrollo y
+										la personalización de los sitios.
+									</p>
+								</section>
+								<!-- ultimate section for the blog -->
+								<section
+									class="Compatibilidad con otras herramientas"
+								>
+									<li>
+										Compatibilidad con otras herramientas:
+									</li>
+									<p>
+										Puedes integrar fácilmente otras
+										herramientas y servicios populares en
+										Astro, como <strong
+											>CMS (Content Management Systems)</strong
+										>, servicios de despliegue como
+										<em>Netlify y Vercel</em>, y otras
+										soluciones de optimización web.
+									</p>
+								</section>
+							</ol>
+						</div>
+					</section>
+				</section>
+			</article>
+			<!-- third post for the blog -->
+			<article
+				class="post_como_funciona_Astro"
+				style="margin-bottom: 10%;"
+			>
+				<div class="titulo_como_funciona_astro">
+					<h2>¿Cómo funciona Astro?</h2>
+				</div>
+				<div class="contenedor-contenido-como-funciona-astro">
+					<p>
+						<strong>Astro</strong> genera un sitio web que se <strong
+							>pre-renderiza</strong
+						>
+						completamente durante el proceso de construcción, lo que
+						significa que la mayoría de los sitios creados con Astro
+						son páginas estáticas.
+					</p>
+					<p>
+						En lugar de cargar toda la lógica de un framework como
+						React o Vue en el navegador, Astro carga solo los
+						<strong>componentes</strong> que necesitan JavaScript, lo
+						que mejora la velocidad de carga.
+					</p>
+					<p>
+						Se puede integrar frameworks de JavaScript cuando sea
+						necesario, pero
+						<strong
+							>Astro solo los carga cuando realmente los necesita.</strong
+						>
+					</p>
+				</div>
+			</article>
+		</div>
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	document
+		.getElementById("logo_astro_link")
+		?.addEventListener("click", () => {
+			window.open("https://astro.build/", "_bank");
+		});
+</script>

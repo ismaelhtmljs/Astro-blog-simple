@@ -1,0 +1,13 @@
+header{
+    animation: slayer-header 1s ease-in-out;
+    transition: 1s;
+}
+
+@keyframes slayer-header {
+    from{
+        transform: translateY(-250px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
