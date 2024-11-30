@@ -348,3 +348,58 @@ footer{
         font-size: 15px;
     }
 }
+
+/* media queri landscape */
+
+@media screen and (orientation: landscape) and (max-width: 1023px){
+    .logo_de_astro {
+        position: relative;
+        margin-left: 48.5%;
+    }
+
+    .titulo h1{
+        font-size: 45px;
+    }
+
+    .lista-menu a{
+        font-size: 10.5px;
+        overflow: hidden;
+    }
+
+    main{
+        max-width: 100%;
+    }
+
+    .subtitulo{
+        font-size: 25px;
+    }
+
+    .subtitulo-post2{
+        font-size: 25px;
+    }
+
+    .subtitulo-caracteristica h2{
+        font-size: 25px;
+    }
+
+    .contenido-caracteristica{
+        padding: 0px;
+        margin-top: 5%;
+    }
+
+    .titulo_como_funciona_astro h2{
+        font-size: 25px;
+    }
+
+    .titulo-footer{
+        font-size: 19px;
+    }
+
+    .description{
+        font-size: 15px;
+    }
+
+    .copy{
+        font-size: 15px;
+    }
+} 
